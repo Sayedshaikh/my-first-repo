@@ -1,0 +1,191 @@
+   #nav::before{
+       content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        Z-index:-1;
+        opacity: 0.4;
+    }
+
+#nav
+{
+    position: absolute;
+}
+#logo img{
+    width: 80px;
+    height: 50px;
+    padding: 2px 2px;
+    margin: 2px;
+}
+#nav{
+    display: flex;
+    /* position: sticky; */
+}
+navbar #nav{
+    position: sticky;
+}
+
+#nav ul{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 9px 30px;
+    margin: 10px 364px;
+    background-color: aqua;
+}
+#nav ul li{
+    list-style: none;
+   
+
+}
+#nav ul li a{
+    padding: 6px;
+    margin: 17px;
+    text-decoration: none;
+   
+}
+#nav a:hover{
+    color: rgb(244, 14, 22);
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+
+#center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 38px;
+    margin: 15px;
+    height: 452px;
+}
+#center::before{
+    content: "";
+    position: absolute;
+    
+    background: url('https://t3.ftcdn.net/jpg/03/51/57/44/360_F_351574443_6mZtd2RFcaGXJQPABkbMEV76lRwltn0q.jpg' )no-repeat center/cover;
+    height: 575px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#center button{
+    background-color:  blanchedalmond;
+    border-radius: 18px;
+    padding: 5px;
+    box-shadow:2px 2px green;
+    
+}
+#center button:hover{
+    background-color:blue;
+    box-shadow: 2px 2px red;
+}
+.box img {
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+h2{
+    text-align: center;
+}
+.box{
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    padding: 37px 26px;
+    margin: 23px 70px;
+    border-radius: 25px;
+    background-color: bisque;
+    box-shadow: 12px 12px rgb(85, 200, 200);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#service::before{
+    content: "";
+   background: url('https://i.pinimg.com/736x/b1/33/fe/b133fe1cf7d86da172350deaf4c85599.jpg') no-repeat center/cover;
+   position: absolute;
+   height: 72%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.7;
+}
+.stage1{
+    text-align: center;
+    font-size: 39px;
+    /* border: 2px solid red; */
+    font-family: 'Bree Serif';
+  
+   
+   
+}
+.serve{
+    margin: 24px;
+    display: flex;
+    
+}
+/* #sponsor::before{
+   content: "";
+   background: url('https://static.vecteezy.com/system/resources/thumbnails/004/275/701/small/fast-food-seamless-background-illustration-simple-restaurant-menu-background-vector.jpg') no-repeat center/cover;
+   position: absolute;
+   height: 60%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.7;
+} */
+#sponsor{
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/004/275/701/small/fast-food-seamless-background-illustration-simple-restaurant-menu-background-vector.jpg') no-repeat center/cover;
+}
+
+.company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients{
+    text-align: center;
+    font-size:xx-large;
+    border: 2px solid black;
+}
+.company img{
+    height: 250px;
+    width: 200px;
+}
+.client{
+    padding: 50px 50px;
+    
+}
+
+#contact::before{
+     content: "";
+     position: absolute;
+     background: url('https://img.freepik.com/free-photo/top-view-blue-monday-concept-composition-with-telephone_23-2149139103.jpg') no-repeat center/cover;
+     height: 80%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.8;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-group{
+    margin-right: 157px;
+   
+}
+#contact-box label{
+    font-size: large;
+    color:black;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 150%;
+    border: 2px solid red;
+    padding: 5px  15px;
+    border-radius: 15px;
+    background-color: aqua;
+}
+html{
+    scroll-behavior: smooth;
+}

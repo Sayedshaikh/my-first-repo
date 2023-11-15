@@ -1,0 +1,38 @@
+       .box{
+        width: 430px;
+        height: 345px;
+        border: 2px black solid;
+        margin: 100px 500px;
+        border-radius: 20px;
+        background-color: chartreuse;
+        
+      }
+      .box1{
+        height: 52px;
+        width: 295px;
+        margin: 11px;
+        border-radius: 13px;
+        background-color: antiquewhite;
+        font-size: large;
+        font-weight: bold;
+      }
+      
+      .box3{
+        height: 56px;
+        width: 84px;
+        margin: auto 8px;
+        border-radius: 15px;
+        font-size: large;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .number table tr td input{
+        height: 56px;
+        width: 84px;
+        margin: 3px 10px;
+        border-radius: 15px;
+        font-size: large;
+        font-weight: bold;
+
+      }

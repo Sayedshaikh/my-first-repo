@@ -1,0 +1,179 @@
+document.getElementById('content').innerHTML='<h3>this is javascript</h3>'  <!--add the header,paragraph in content or any section  -->
+
+<!-- The syntax of creating object  -->
+let object={key1:value1,
+            key2:value2.....
+            keyN:valueN}  
+eg:
+let emp={id:102,
+         name:"sayed",
+         salary:400000}  
+ document.write(emp.id+" "+emp.name+" "+emp.salary);     
+
+
+<!-- note : use 'let' instead of var -->
+<!-- if 'a' is declared twice it shows error -->         
+ let a="u"                                               
+ let a="u6"                                             
+ {                                                        
+
+ }    
+                                                    
+<!--if 'a' is declared under block not shows error -->
+  let a="u"  <!--global variable -->
+   {
+     let a="u6"  <!--local variable -->
+   }
+
+<!-- 'new' uses to create a object & Array is the object that means create a new object as a name of Array-->
+eg: let names=new Array(1,2,3,undefined,"sayed")
+    let names=new Array(array-size) 
+    eg.let names=new Array(23)---form a 23 empty spaces
+
+<!-- interaction of alert,prompt,confirm     -->
+<script>
+    //alert- it opens the modal window and it gives alert msg to user
+     alert("this is msg") 
+
+    //prompt-take input from user
+     let s=prompt("what is your age?");
+    if(s<18){
+        console.log("not allowed for childrens and it is only for 18+");
+    }
+    else{
+        console.log("permission granted ");
+    }
+    //confirm-ask permission from user
+    let a=confirm("are you exit?");
+ 
+    if(a){
+        console.log("exit successful");
+    }
+    else{
+        console.log("no exit");
+    }
+</script>
+
+<!-- using foreach ,for in diff ways -->
+let friends=["sayed","varun","adity","chandan"];
+
+1.for(let i=0;i;i++){                                <!--i value is i<friend.length---(length of the array)    -->
+    console.log("hello friend "+ friends[index]);
+}
+
+ 2.friends.forEach(function f(element)            <!--comment--friends.forEach(function any_fun_name(elements) -->
+{
+console.log("hello friend "+ element);
+})
+
+3.for(element of friends){
+    console.log("hello friend "+ element);
+}
+
+<!-- use this loop to iterate over objects in js  -->
+let employee={
+    name:"sayed",
+    salary:150000,
+    company:"Google"
+   }
+   for(key in employee)
+   {
+    console.log(`employee ${key} is`+employee[key]) or console.log(`the emp ${key} is ${employee[key]} `)
+   }
+<!-- do while--statement is true or false but it must be enters the loop & execute ones -->
+let i=99
+do{
+ console.log(`${i} is less than4` );
+}while(i-lessthan-4)
+
+
+<!-- create show/hide the details -->
+<button class="btn" onclick="toggleHide()">show/hide</button>
+  <script>
+    function toggleHide(){
+      let btn=document.getElementById('btn')
+      let para=document.getElementById('para')
+      if(para.style.display != 'none')
+       para.style.display='none'
+      else
+       para.style.display='block' 
+    }
+  </script>
+
+<!-- settime and clear time -->
+<script>
+    function greet(name){
+        console.log("hi everyone"+name);
+    }
+    timeout= setTimeout(greet,5000,"how are you");//allows us to run the function once after the interval time.  NOTE-not using "greet()" in setTimeout only use "greet"
+    console.log(timeout)
+    clearTimeout(timeout); //allows us to run the function repeatedly after the interval time
+
+    intervalid=setInterval(greet,1000,"sayed")//it can print the statement every 1sec/2sec/...nsec
+    clearInterval(intervalid)//when statement is print it can clear the interval suddenly
+</script>
+
+<!-- display time and date -->
+<!-- basic form -->let s=new Date()
+                    console.log(s) <!--it is display in console part -->
+
+                    let date=new Date(2025,5,23,5,30,35)
+                    console.log(date)
+                    let a=date.getSeconds()
+                    console.log(a) 
+                    date.setFullYear(1222)
+                    console.log(date)
+
+1.<div class="container">
+    time now is <span id="time"></span>
+</div>
+<script>
+   function displaytime()
+   {
+    time=new Date()
+    console.log(time)
+    document.getElementById('time').innerHTML=time
+   }
+setInterval(displaytime,1000)
+
+// 2method. setInterval(disptime,1000)
+//        function disptime(){
+//           time.innerHTML=new Date();---->span id="time"
+          
+//        }
+</script>
+
+ <!-- before using arrow fun -->
+hello = function() {
+  return "Hello World!";
+}
+
+<!-- after using arrow func -->
+hello = () => "Hello World!";
+
+<!-- Generate random number using Math function -->
+<script>
+let A=1
+let B=100
+let r1=A+(B-A)*Math.random()  // let r1=100*Math.random()-----> good approch is use let r1=A+(B-A)*Math.random() because we can set both min &max value
+console.log("the random value is",r1)
+console.log("the random value is",Math.round(r1))
+    </script>
+
+
+<!-- JSON(JavaScript Object Notation)is using to the data transportation :tranfer the data through network in string format -->
+<script>
+    let obj={
+      name:"sayed",
+      id: 100,
+      skills: "c++,java"
+      }
+      console.log(obj)
+
+      let jsonobj=JSON.stringify(obj)    //object to string using *stringify*
+      console.log(jsonobj)
+ 
+      let newjsonobj=JSON.parse(jsonobj) //string to object using *parse*
+      console.log(newjsonobj)
+     
+   </script>

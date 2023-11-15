@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRONMAN GYM FITNESS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+      body {
+        font-family: "Baloo Bhai 2", cursive;
+        display: inline;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url("https://media.istockphoto.com/id/1287504319/photo/fitness-equipment-on-the-floor-at-the-gym.jpg?s=612x612&w=0&k=20&c=YdX22jy89A_E5Id-GvlRbcgIZIiSlIJpN2u0NTgTdDc= ");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .left {
+        display: inline-block;
+        width: 23%;
+
+        left: 34px;
+        top: 12px;
+        margin: 23px 9px;
+      }
+      .left img {
+        width: 70px;
+        right: 105px;
+      }
+      .center {
+        display: block;
+        margin: -120px auto;
+        width: 550px;
+      }
+      .right {
+        display: inline-block;
+        width: 190px;
+
+        position: absolute;
+        right: 34px;
+        top: 50px;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar ul {
+        overflow: auto;
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 19px;
+        list-style: none;
+      }
+      .navbar li a {
+        color: yellow;
+        padding: 2px 2px;
+        text-decoration: none;
+      }
+      .navbar li a:hover {
+        text-decoration: underline;
+        color: red;
+      }
+      s {
+        color: red;
+      }
+      .btn {
+        padding: 5px;
+        margin: 5px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: blue;
+      }
+      .container {
+        margin: 175px 48px;
+        padding: 0px 0px;
+        border: 1px solid white;
+        font-size: x-small;
+        width: 465px;
+        border-radius: 22px;
+      }
+      .join input {
+        text-align: center;
+        margin: 3px auto;
+        display: block;
+        padding: 1px;
+        border: 2px solid rgb(126, 11, 11);
+        border-radius: 8px;
+        font-size: 15px;
+        font-family: "Baloo Bhai 2", cursive;
+        width: 400px;
+      }
+      h1 {
+        text-align: center;
+      }
+      /* button setting */
+      .container button {
+        display: block;
+        width: 86%;
+        margin: 5px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="gym">
+      <div class="left">
+        <img
+          src="https://www.shutterstock.com/image-vector/fitness-logo-vector-symbol-icon-600w-1926906863.jpg"
+          alt=""
+        />
+        <div class="s">welcome to gym</div>
+      </div>
+      <div class="center">
+        <ul class="navbar">
+          <li><a href="">Home </a></li>
+          <li><a href=""> About-us </a></li>
+          <li><a href=""> Contact-us </a></li>
+          <li><a href=""> 30day-free-trial </a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">call us</button>
+        <button class="btn"><a href="https://www.instagram.com/" target="_blank">instagram</a></button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>join this now..</h1>
+      <form action="">
+        <div class="join">
+          <input type="text" placeholder="enter your name" />
+        </div>
+        <div class="join">
+          <br />
+          <input type="text" placeholder="enter your age" />
+        </div>
+        <div class="join">
+          <br />
+          <input type="text" placeholder="enter num" />
+        </div>
+        <div class="join">
+          <br />
+          <input type="text" placeholder="enter email-id" />
+        </div>
+        <br />
+        <div class="join">
+          <button class="btn">submit</button><br />
+          <button class="btn">reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

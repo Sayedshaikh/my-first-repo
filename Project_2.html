@@ -1,0 +1,80 @@
+ <!DOCTYPE html>      <!-- using the before after psedo selector and flex box  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        background-color: black;
+        color:yellowgreen;
+        
+        
+    }
+    /* CSS ::before and ::after pseudo-elements allow you to insert “content” before and after any non-replaced element */
+    header::before{  
+        background: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg');
+        background-repeat: no-repeat;
+        content: "";
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        
+    }
+
+    section{
+        text-align: center;
+       
+        height: 344px;
+        justify-content: center;
+        margin: 3px 234px;
+         display: flex;
+         flex-direction: column;
+    }
+    /* section::before{
+        content: "this is content";
+    } */
+    .navigation{
+        display: flex;
+        font-size: 20px;
+    }
+    li{
+        list-style: none;
+        padding: 18px 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 20px; 
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+         <ul class="navigation">
+            <li class="item">home</li>
+            <li class="item">contact</li>
+            <li class="item">feedback</li>
+            <li class="item">help</li>
+         </ul>
+
+
+        </nav>
+    </header>
+    <section>
+        <h1>welcome code world</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ab voluptatum, vel, alias at id sed temporibus in ipsa error illo magni iusto unde rerum explicabo. Optio rem eius quo.</p>
+    </section>
+</body>
+</html>

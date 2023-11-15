@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cyan;
+        }
+       .container{
+        display: grid;
+        grid-gap: 12px;
+        grid-template-areas: 
+  'navbar navbar navbar navbar'    
+ 'section section section aside'
+ 'footer footer footer footer'
+        /* background-color: blue; */
+       }
+        @media (max-width:100%)
+       {
+        body{
+            
+            background-color: blue;
+        }
+       }
+       @media (max-width:600px) and (min-width:300px)
+       {
+        body{
+            
+            background-color: rgb(14, 14, 120);
+        }
+       }
+       @media (max-width:800px) and (min-width:600px)
+       {
+        body{
+            
+            background-color: rgb(167, 14, 14);
+        }
+        .container{
+        display: grid;
+        grid-gap: 12px;
+        grid-template-areas: 
+  'navbar navbar navbar navbar'    
+ 'section section section section'
+ 'aside aside aside aside'
+ 'footer footer footer footer'
+       }
+       aside{
+        display: none;
+       }
+       }
+       @media (max-width:1200px) and (min-width:800px)
+       {
+        body{
+            
+            background-color: rgb(101, 193, 30);
+        }
+        .container{
+        display: grid;
+        grid-gap: 12px;
+        grid-template-areas: 
+  'navbar navbar navbar navbar'    
+ 'section section section section'
+ 'aside aside aside aside'
+ 'footer footer footer footer'
+       }
+    }
+       .bdr{
+         border: 3px solid black;
+         padding: 23px;
+         background-color: bisque;
+         
+       }
+       nav{
+grid-area: navbar;
+}
+section{
+grid-area: section;
+}
+aside{
+grid-area: aside;
+}  
+ footer{ 
+    grid-area:footer;
+    text-align: center;
+    
+} 
+    </style>
+</head>
+<body>
+ <div class="container">
+    <nav class="bdr">
+    home contact feedback aboutus
+    </nav>
+    <section class="bdr">
+     <h1>css with sayed</h1>
+    </section>
+
+    <aside class="bdr">
+    <h2>learn step-by-step</h2>
+    </aside>
+    <footer class="bdr"><h3>complete the course in 3-months</h3></footer>
+ </div>
+</body>
+</html>

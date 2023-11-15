@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: bisque;
+      }
+      .btn {
+        background-color: aquamarine;
+        height: 35px;
+        width: 75px;
+        border-radius: 15px;
+      }
+      .btn:hover {
+        background-color: blue;
+      }
+      h1 {
+        background-color: aqua;
+        width: 270px;
+        border-radius: 15px;
+        box-shadow: 5px 5px green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>revolutionary army</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        adipisci iusto aspernatur in dignissimos tempore. Assumenda, repellat
+        eius! In consequuntur at officiis atque expedita aut modi non adipisci
+        culpa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
+        obcaecati. Voluptates modi id voluptate, itaque aut magni
+        necessitatibus, aliquam aperiam dolore mollitia tempore deserunt dolores
+        adipisci rem. Deleniti et obcaecati recusandae dolor aperiam hic eaque
+        suscipit. Quidem quam debitis
+      </p>
+    </div>
+
+    <button class="btn" onclick="toggleHide()">show/hide</button>
+    <script>
+     let para=document.getElementById('para')
+     para.addEventListener('mouseover',function run(){
+      alert('mouse is inside')
+     })
+
+
+
+      function toggleHide() {
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        
+        if (para.style.display != "none") 
+         para.style.display = "none";
+        else 
+         para.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+           width: 500px;
+           height: 500px;
+           background-color: aqua;
+        }
+        .box{
+            box-shadow: 5px 4px green;
+         width: 250px;
+         height: 250px;
+         background-color: blue;
+         position: relative;
+         /* animation-name: sayed; */
+         animation-name: sayed1;  /*sayed1 is activate */
+       animation-duration: 1s;
+       animation-iteration-count: 3;
+       animation-fill-mode: alternate;
+        animation-timing-function: ease-in-out;
+        animation-direction: reverse;
+        
+        }
+        @keyframes sayed1 {
+            0%{
+             top: 0px;
+             left: 0px;
+
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+              top:250px ;
+              left: 250px;
+            }
+            100%{
+             top: 0px;
+             left: 250px;
+            }
+        }
+        @keyframes sayed {
+            from{
+          width: 200px;
+         
+            }
+            to{
+          width: 400px;
+         
+            }
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        this animation world
+    </div>
+    </div>
+  </body>
+</html>
+
+<!-- In html--create id in diff names and create class in same names -->
+
+<!-- when you use display:felx; must be use 1.align-items: center;2.justify-content: center; -->
+
+<!-- using animation and keyframes -->                                  
+.container{
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+}
+.box{
+   box-shadow: 5px 4px green;
+width: 250px;
+height: 250px;
+background-color: blue;
+position: relative;
+/* animation-name: sayed; */
+animation-name: sayed1;  /*sayed1 is activate */
+animation-duration: 1s;
+animation-iteration-count: 3;
+animation-fill-mode: alternate;
+animation-timing-function: ease-in-out;
+animation-direction: reverse;
+}
+@keyframes sayed1 {
+   0%{
+    top: 0px;
+    left: 0px;
+
+   }
+   25%{
+       top: 250px;
+       left: 0px;
+   }
+   75%{
+     top:250px ;
+     left: 250px;
+   }
+   100%{
+    top: 0px;
+    left: 250px;
+   }
+}
+<!-- using transition property -->
+/* #box{
+  width: 223px;
+  height: 200px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   transition-property: background-color; 
+   transition-duration: 1s; 
+   transition-timing-function: ease-in-out ; 
+   transition-delay: 2s; 
+}
+/* #box:hover{
+  background-color: rgb(230, 20, 30);
+  height: 260px;
+  width: 240px;
+  border-radius: 20px;
+} */
+
+<!-- tranform property comes under .box:hover part-->
+transform: scale(2); <!--Defines a 2D scale transformation -->
+transform: rotateX('angle');
+transform: rotate();
+transform: skew(); <!--it gives 3-d from -->
+ transform: translate(x-px y-px);  <!--box is moving -->
+
+<!-- using the grid property -->
+.container{
+  display: grid;
+  grid-template-columns: c1-width c2-width c3-width;           <!--eg:(300px 300px 300px) -->
+  grid-template-columns: repeat(no.of column , column-width);   <!--eg:repeat(6,300px) -->
+  grid-template-rows: 1fr 2fr 3fr;                              <!-- it can divide the rows in fraction/ratio -->
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 2fr;
+  grid-row-gap:2rem;
+  grid-columns-gap:1rem;
+  grid-gap: 20px;
+ grid-template-columns: repeat(auto-fit,minmax(400px,1fr));    <!--we can do resposive website like phone,tab,pc -->
+ 
+ }
+ .item{
+  /* height: 100px;
+  width: 100px; */
+  background-color: blueviolet;
+  border: 2px solid red;
+ }
+
+.box:first-child{     <!-- when you target particular box to setup correctly -->
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end:4 ;
+}
+
+<!-- css grid areas -->
+.container{
+  display: grid;
+ 
+  grid-gap: 1rem;
+  grid-template-areas: 
+  'navbar navbar navbar navbar'    <!--it can decide the area-->
+ 'section section section aside'   <!-- section is covered more area and aside is covered less area -->
+ 
+ }
+ .item{
+     background-color: blue;
+     padding: 23px;
+     border: 2px solid black;
+ }
+#navbar{
+grid-area: navbar;
+}
+#section{
+grid-area: section;
+}
+#aside{
+grid-area: aside;
+}  
+footer{ 
+  grid-area:footer;
+  text-align: center;
+  } 
+<body>
+  <div id="navbar" class="item"></div>
+  <div id="section" class="item"></div>
+  <div id="aside" class="item"></div>
+</body>

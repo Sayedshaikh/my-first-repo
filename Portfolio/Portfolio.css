@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+/* header-part */
+ .header {
+    background-image: url("https://itchronicles.com/wp-content/uploads/2021/06/AI-in-legal-1024x532.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100% ;
+    height:674px ;
+    color: aqua;
+    font-size: 1.1rem;
+    Font-family: Impact, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+ }
+.right{
+     float: right;
+     margin: -8px 18px;
+}
+.right  li a{
+    text-decoration: none;
+}
+.right  li a:hover{
+    cursor: pointer;
+}
+.left h1{
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li a{
+    color: aqua;
+}
+.right-down img{
+   float:right ;
+   height: 200px;
+   width: 500px;
+   /* margin: -222px 332px; */
+    
+}
+#navigator a { 
+    float: right; 
+    display: block; 
+    color: #f2f2f2; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+    font-size: 17px; 
+} 
+ .right li {
+    
+    display: inline-block;
+    margin: 0px 20px;
+    font-size: 20px;
+     border-radius: 50px; 
+     border: 2px solid red; 
+     list-style: none;
+}
+.right li a{
+    float: left;
+    text-decoration: none;
+    padding: 3px;
+}
+
+.right li a::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:cadetblue;
+    position: absolute;
+    border-radius: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    animation: flash 100ms ease-in-out;
+    transform: scaleX(2) scaleY(2);
+}
+.right li a:hover::before {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+}
+
+@keyframes flash {
+    0%{
+        opacity: 1;
+        transform: translate(45px);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0);
+    }
+}
+#navigator{
+        height: 70px;
+        background-color: #0074D9; 
+        position: fixed;
+        width: 100%;
+        top: 0;
+        overflow: hidden;
+}
+
+.left{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 30px;
+}
+
+#intru{
+    display: flex;
+    flex-direction: column;
+   
+    height: 340px;
+    width: 334px;
+    margin: 58px 52px;
+    padding: 75px 19px
+}
+
+#about{
+ width: 100%;
+ height: 1000px;
+ background-image: url("https://media.istockphoto.com/id/1408821734/photo/business-strategy-development-and-growing-growth-plan-financial-management-strategy-for.jpg?s=612x612&w=0&k=20&c=66KZpiB7BvQB_5eFLbQZ_6Z03tzMHLBh1oTR4KTHA9k=");
+ background-repeat: no-repeat;
+ background-size: cover;
+
+
+}
+.image{
+    text-align: center;
+    padding: 70px;
+}
+.image h1{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+}
+.image img{
+    width: 196px;
+    height: 196px;
+    border-radius:  200px;
+}
+img{
+    width: 100px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #ffff;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.1rem;
+    
+}
+.box{
+ padding: 1rem;
+ color:rgb(0, 166, 255);  
+ cursor: pointer;
+}
+.Skill-icon{
+    width: 90px;
+    
+}
+.box img:hover{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.box:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 0 2px 0;
+    transition: .5s;
+}
+#projects{
+   
+    background-image: url("https://images.unsplash.com/photo-1572177812156-58036aae439c?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aqua;
+    margin: -22px 0px;
+    width: 100%;
+    height: 800px;
+}
+
+.frame{
+    height:500px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 3rem 80px;
+    font-size: 1.1rem;
+    
+}
+#projects  h1{
+   
+    text-align: center;
+    position: relative;
+    top: 64px;
+}
+.pro-box img{
+   height: 90px;
+   width: 90px;
+}
+.pro-box img:hover{
+     cursor: pointer;
+}
+
+#Resume{
+    width: 100%;
+    height: 845px;
+    background-image: url("https://www.shutterstock.com/image-photo/top-view-resumes-applicants-magnifying-260nw-2161194169.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    
+}
+.gap{
+    padding: 30px;
+}
+
+#contact {
+    background-image: url("https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?s=612x612&w=0&k=20&c=_vmYyAX0aFi-sHH8eYS-tLLNfs1ZWXnNB8M7_KWwhgg=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    
+    text-align: center;
+    width: 100%;
+    height: 589px;
+    
+  }
+  #contact h1{
+    color: aqua;
+    padding: 36px;
+    margin: 0px;
+  }
+  
+  #contact h2 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  #contact p {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+ 
+
+  .connect{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+justify-content: center;
+align-items: center;
+text-align: center;
+grid-gap: 1rem;
+padding: 1rem 80px;
+font-size: 1.1rem;
+  }
+
+  .connect{
+      margin: 67px 0px;
+  }
+.connect img{
+    width: 90px;
+    height: 90px;
+}  
+.connect a{
+    text-decoration: none;
+}
+.connect p{
+   color:blanchedalmond;
+}
+.connect p:hover{
+    cursor: pointer;
+}
+.footer-content a{
+    text-decoration: none;
+    color: blue;
+}
+.footer-content{
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: blue;
+    
+}
+
+.section-divider {
+    background-color: #333;
+    height: 25px;
+    width: 100%;
+    
+  }
+  .box4{
+    padding: 16px 0px;
+  }
